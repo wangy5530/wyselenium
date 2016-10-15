@@ -1,4 +1,4 @@
-package com.data;
+package com.seleniumtest.data;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -10,12 +10,12 @@ import java.util.Iterator;
 /**
  * Created by Administrator on 2016/9/25.
  */
-public class Data {
+public class FileData {
 
     public static void main(String[] args) {
         int i = 0;
         String[] swap = null;
-        Data d = new Data();
+        FileData d = new FileData();
         Iterator<String[]> bf = d.getFileData("src/main/resources/filedata.txt", "|");
         while (bf.hasNext()) {
             swap = bf.next();
